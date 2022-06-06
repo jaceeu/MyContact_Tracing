@@ -26,7 +26,8 @@ namespace Contact_Tracing
             file.WriteLine("Name :" + txtBox1.Text);
             file.WriteLine("Address :" + txtBox2.Text);
             file.WriteLine("Contact No. :" + txtBox3.Text);
-            file.Close();   
+            file.Close();
+            MessageBox.Show("Thank you");
         }
     }
 }
