@@ -40,7 +40,7 @@
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(285, 85);
             this.btn1.TabIndex = 0;
-            this.btn1.Text = "Test";
+            this.btn1.Text = "Save";
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
