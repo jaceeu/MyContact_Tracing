@@ -16,5 +16,11 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            //StreamWriter File =File.AppendText(@"C:\Users\Carlo\source\test.txt");
+            
+        }
     }
 }
