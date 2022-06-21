@@ -26,8 +26,23 @@ namespace Contact_Tracing
             file.WriteLine("Name :" + txtBox1.Text);
             file.WriteLine("Address :" + txtBox2.Text);
             file.WriteLine("Contact No. :" + txtBox3.Text);
+            file.WriteLine("Time In. :" + txtBox4.Text);
+            file.WriteLine("Time Out. :" + txtBox5.Text);
+            file.WriteLine("Date. :" + txtBox6.Text);
             file.Close();
             MessageBox.Show("Thank you");
+        }
+
+        private void btnInfo_Click(object sender, EventArgs e)
+        {
+            StreamReader inputFile = new StreamReader(@"C:\Users\Carlo\source\test.txt");
+
+            while (!inputFile.EndOfStream)
+            {
+                String line = inputFile.ReadLine();
+            }
+
+            inputFile.Close();
         }
     }
 }
