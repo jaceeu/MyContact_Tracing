@@ -47,7 +47,7 @@ namespace Contact_Tracing
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\Carlo\source\test.txt");
+            StreamWriter file = new StreamWriter(@"C:\Users\Carlo\source\test2.txt");
             file.WriteLine("Name :" + txtBox1.Text);
             file.WriteLine("Address :" + txtBox2.Text);
             file.WriteLine("Contact No. :" + txtBox3.Text);
@@ -60,7 +60,7 @@ namespace Contact_Tracing
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\Carlo\source\test.txt");
+            StreamWriter file = new StreamWriter(@"C:\Users\Carlo\source\test3.txt");
             file.WriteLine("Name :" + txtBox1.Text);
             file.WriteLine("Address :" + txtBox2.Text);
             file.WriteLine("Contact No. :" + txtBox3.Text);
@@ -73,16 +73,26 @@ namespace Contact_Tracing
 
         private void btnInfo2_Click(object sender, EventArgs e)
         {
-            StreamReader inputFile = new StreamReader(@"C:\Users\Carlo\source\test.txt");
+            StreamReader inputFile = new StreamReader(@"C:\Users\Carlo\source\test2.txt");
             infoTxtBox.Text = inputFile.ReadToEnd();
             inputFile.Close();
         }
 
         private void btnInfo3_Click(object sender, EventArgs e)
         {
-            StreamReader inputFile = new StreamReader(@"C:\Users\Carlo\source\test.txt");
+            StreamReader inputFile = new StreamReader(@"C:\Users\Carlo\source\test3.txt");
             infoTxtBox.Text = inputFile.ReadToEnd();
             inputFile.Close();
+        }
+
+        private void infoTxtBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void infoTxtBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }       
