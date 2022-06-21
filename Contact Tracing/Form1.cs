@@ -22,7 +22,7 @@ namespace Contact_Tracing
         {
             //StreamWriter File =File.AppendText(@"Downloads\test.txt");
 
-            StreamWriter file = new StreamWriter(@"C:\Users\Carlo\source\test.txt",true);
+            StreamWriter file = new StreamWriter(@"C:\Users\Carlo\source\test.txt");
             file.WriteLine("Name :" + txtBox1.Text);
             file.WriteLine("Address :" + txtBox2.Text);
             file.WriteLine("Contact No. :" + txtBox3.Text);
@@ -47,7 +47,7 @@ namespace Contact_Tracing
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\Carlo\source\test.txt", true);
+            StreamWriter file = new StreamWriter(@"C:\Users\Carlo\source\test.txt");
             file.WriteLine("Name :" + txtBox1.Text);
             file.WriteLine("Address :" + txtBox2.Text);
             file.WriteLine("Contact No. :" + txtBox3.Text);
@@ -60,7 +60,7 @@ namespace Contact_Tracing
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(@"C:\Users\Carlo\source\test.txt", true);
+            StreamWriter file = new StreamWriter(@"C:\Users\Carlo\source\test.txt");
             file.WriteLine("Name :" + txtBox1.Text);
             file.WriteLine("Address :" + txtBox2.Text);
             file.WriteLine("Contact No. :" + txtBox3.Text);

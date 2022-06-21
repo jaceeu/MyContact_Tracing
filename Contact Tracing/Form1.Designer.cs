@@ -47,6 +47,8 @@
             this.btn3 = new System.Windows.Forms.Button();
             this.btnInfo2 = new System.Windows.Forms.Button();
             this.btnInfo3 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btn1
@@ -181,9 +183,9 @@
             // 
             // infoTxtBox
             // 
-            this.infoTxtBox.Location = new System.Drawing.Point(524, 124);
+            this.infoTxtBox.Location = new System.Drawing.Point(495, 114);
             this.infoTxtBox.Name = "infoTxtBox";
-            this.infoTxtBox.Size = new System.Drawing.Size(311, 226);
+            this.infoTxtBox.Size = new System.Drawing.Size(164, 358);
             this.infoTxtBox.TabIndex = 14;
             this.infoTxtBox.Text = "";
             this.infoTxtBox.TextChanged += new System.EventHandler(this.infoTxtBox_TextChanged);
@@ -232,12 +234,30 @@
             this.btnInfo3.UseVisualStyleBackColor = true;
             this.btnInfo3.Click += new System.EventHandler(this.btnInfo3_Click);
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(665, 114);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(164, 358);
+            this.richTextBox1.TabIndex = 19;
+            this.richTextBox1.Text = "";
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(835, 114);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(164, 358);
+            this.richTextBox2.TabIndex = 20;
+            this.richTextBox2.Text = "";
+            // 
             // DaTrace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
-            this.ClientSize = new System.Drawing.Size(920, 638);
+            this.ClientSize = new System.Drawing.Size(1105, 638);
+            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btnInfo3);
             this.Controls.Add(this.btnInfo2);
             this.Controls.Add(this.btn3);
@@ -286,6 +306,8 @@
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btnInfo2;
         private System.Windows.Forms.Button btnInfo3;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
 
