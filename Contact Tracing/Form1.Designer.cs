@@ -43,6 +43,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtBox6 = new System.Windows.Forms.TextBox();
             this.infoTxtBox = new System.Windows.Forms.RichTextBox();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btnInfo2 = new System.Windows.Forms.Button();
+            this.btnInfo3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn1
@@ -184,12 +188,60 @@
             this.infoTxtBox.Text = "";
             this.infoTxtBox.TextChanged += new System.EventHandler(this.infoTxtBox_TextChanged);
             // 
+            // btn2
+            // 
+            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.Location = new System.Drawing.Point(57, 356);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(200, 55);
+            this.btn2.TabIndex = 15;
+            this.btn2.Text = "Save";
+            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            // 
+            // btn3
+            // 
+            this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.Location = new System.Drawing.Point(57, 417);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(200, 55);
+            this.btn3.TabIndex = 16;
+            this.btn3.Text = "Save";
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            // 
+            // btnInfo2
+            // 
+            this.btnInfo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfo2.Location = new System.Drawing.Point(275, 356);
+            this.btnInfo2.Name = "btnInfo2";
+            this.btnInfo2.Size = new System.Drawing.Size(200, 55);
+            this.btnInfo2.TabIndex = 17;
+            this.btnInfo2.Text = "Info";
+            this.btnInfo2.UseVisualStyleBackColor = true;
+            this.btnInfo2.Click += new System.EventHandler(this.btnInfo2_Click);
+            // 
+            // btnInfo3
+            // 
+            this.btnInfo3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInfo3.Location = new System.Drawing.Point(275, 417);
+            this.btnInfo3.Name = "btnInfo3";
+            this.btnInfo3.Size = new System.Drawing.Size(200, 55);
+            this.btnInfo3.TabIndex = 18;
+            this.btnInfo3.Text = "Info";
+            this.btnInfo3.UseVisualStyleBackColor = true;
+            this.btnInfo3.Click += new System.EventHandler(this.btnInfo3_Click);
+            // 
             // DaTrace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(920, 638);
+            this.Controls.Add(this.btnInfo3);
+            this.Controls.Add(this.btnInfo2);
+            this.Controls.Add(this.btn3);
+            this.Controls.Add(this.btn2);
             this.Controls.Add(this.infoTxtBox);
             this.Controls.Add(this.txtBox6);
             this.Controls.Add(this.label6);
@@ -230,6 +282,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtBox6;
         private System.Windows.Forms.RichTextBox infoTxtBox;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.Button btnInfo2;
+        private System.Windows.Forms.Button btnInfo3;
     }
 }
 
