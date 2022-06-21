@@ -42,6 +42,7 @@
             this.btnInfo = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txtBox6 = new System.Windows.Forms.TextBox();
+            this.infoTxtBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // btn1
@@ -174,12 +175,22 @@
             this.txtBox6.Size = new System.Drawing.Size(318, 20);
             this.txtBox6.TabIndex = 13;
             // 
+            // infoTxtBox
+            // 
+            this.infoTxtBox.Location = new System.Drawing.Point(524, 124);
+            this.infoTxtBox.Name = "infoTxtBox";
+            this.infoTxtBox.Size = new System.Drawing.Size(311, 226);
+            this.infoTxtBox.TabIndex = 14;
+            this.infoTxtBox.Text = "";
+            this.infoTxtBox.TextChanged += new System.EventHandler(this.infoTxtBox_TextChanged);
+            // 
             // DaTrace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
-            this.ClientSize = new System.Drawing.Size(502, 497);
+            this.ClientSize = new System.Drawing.Size(920, 638);
+            this.Controls.Add(this.infoTxtBox);
             this.Controls.Add(this.txtBox6);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnInfo);
@@ -218,6 +229,7 @@
         private System.Windows.Forms.Button btnInfo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtBox6;
+        private System.Windows.Forms.RichTextBox infoTxtBox;
     }
 }
 
