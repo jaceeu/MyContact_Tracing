@@ -42,7 +42,7 @@ namespace Contact_Tracing
 
         private void infoTxtBox_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btn2_Click(object sender, EventArgs e)
@@ -74,14 +74,14 @@ namespace Contact_Tracing
         private void btnInfo2_Click(object sender, EventArgs e)
         {
             StreamReader inputFile = new StreamReader(@"C:\Users\Carlo\source\test2.txt");
-            infoTxtBox.Text = inputFile.ReadToEnd();
+            infoTxtBox2.Text = inputFile.ReadToEnd();
             inputFile.Close();
         }
 
         private void btnInfo3_Click(object sender, EventArgs e)
         {
             StreamReader inputFile = new StreamReader(@"C:\Users\Carlo\source\test3.txt");
-            infoTxtBox.Text = inputFile.ReadToEnd();
+            infoTxtBox3.Text = inputFile.ReadToEnd();
             inputFile.Close();
         }
 
