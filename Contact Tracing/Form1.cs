@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AForge.Video;
+using AForge.Video.DirectShow;
 
 namespace Contact_Tracing
 {
@@ -18,6 +20,9 @@ namespace Contact_Tracing
         {
             InitializeComponent();
         }
+
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice captureDevice;
 
         private void btn1_Click(object sender, EventArgs e)
         {
@@ -98,10 +103,22 @@ namespace Contact_Tracing
 
         private void btngenerate_Click(object sender, EventArgs e)
         {
-            QRCodeGenerator qr = new QRCodeGenerator();
-            QRCodeData data = qr.CreateQrCode(txtBox7.Text, QRCodeGenerator.ECCLevel.Q);
-            QRCode code = new QRCode(data);
-            picBox1.Image = code.GetGraphic(5);
+            captureDevice = new VideoCaptureDevice(filterInfoCollection[cboDevice.SelectedIndex].MonikerString);
+            captureDevice.NewFrame += CaptureDevice_NewFrame;
+            captureDevice.Start();
+        }
+
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void DaTrace_Load(object sender, EventArgs e)
+        {
+            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach(FilterInfo filterinfo in filterInfoCollection)
+                cboDevice.Items.Add(filterinfo);
+            cboDevice.SelectedIndex = 0;
         }
     }
 }       

@@ -53,6 +53,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.picBox1 = new System.Windows.Forms.PictureBox();
             this.txtBox7 = new System.Windows.Forms.TextBox();
+            this.cboDevice = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -260,7 +261,7 @@
             // btngenerate
             // 
             this.btngenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btngenerate.Location = new System.Drawing.Point(314, 489);
+            this.btngenerate.Location = new System.Drawing.Point(469, 489);
             this.btngenerate.Name = "btngenerate";
             this.btngenerate.Size = new System.Drawing.Size(297, 31);
             this.btngenerate.TabIndex = 21;
@@ -272,7 +273,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(51, 369);
+            this.label7.Location = new System.Drawing.Point(198, 369);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 16);
             this.label7.TabIndex = 22;
@@ -281,7 +282,7 @@
             // picBox1
             // 
             this.picBox1.BackColor = System.Drawing.Color.White;
-            this.picBox1.Location = new System.Drawing.Point(46, 388);
+            this.picBox1.Location = new System.Drawing.Point(201, 388);
             this.picBox1.Name = "picBox1";
             this.picBox1.Size = new System.Drawing.Size(262, 230);
             this.picBox1.TabIndex = 23;
@@ -289,11 +290,19 @@
             // 
             // txtBox7
             // 
-            this.txtBox7.Location = new System.Drawing.Point(314, 388);
+            this.txtBox7.Location = new System.Drawing.Point(469, 388);
             this.txtBox7.Multiline = true;
             this.txtBox7.Name = "txtBox7";
             this.txtBox7.Size = new System.Drawing.Size(297, 95);
             this.txtBox7.TabIndex = 24;
+            // 
+            // cboDevice
+            // 
+            this.cboDevice.FormattingEnabled = true;
+            this.cboDevice.Location = new System.Drawing.Point(274, 364);
+            this.cboDevice.Name = "cboDevice";
+            this.cboDevice.Size = new System.Drawing.Size(189, 21);
+            this.cboDevice.TabIndex = 25;
             // 
             // DaTrace
             // 
@@ -301,6 +310,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
             this.ClientSize = new System.Drawing.Size(888, 630);
+            this.Controls.Add(this.cboDevice);
             this.Controls.Add(this.txtBox7);
             this.Controls.Add(this.picBox1);
             this.Controls.Add(this.label7);
@@ -329,6 +339,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "DaTrace";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.DaTrace_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -362,6 +373,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox picBox1;
         private System.Windows.Forms.TextBox txtBox7;
+        private System.Windows.Forms.ComboBox cboDevice;
     }
 }
 
