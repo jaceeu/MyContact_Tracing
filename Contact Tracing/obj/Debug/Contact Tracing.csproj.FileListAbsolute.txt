@@ -9,3 +9,5 @@ C:\Users\Carlo\source\repos\Contact Tracing\Contact Tracing\obj\Debug\Contact Tr
 C:\Users\Carlo\source\repos\Contact Tracing\Contact Tracing\obj\Debug\Contact Tracing.csproj.CoreCompileInputs.cache
 C:\Users\Carlo\source\repos\Contact Tracing\Contact Tracing\obj\Debug\Contact Tracing.exe
 C:\Users\Carlo\source\repos\Contact Tracing\Contact Tracing\obj\Debug\Contact Tracing.pdb
+C:\Users\Carlo\source\repos\Contact Tracing\Contact Tracing\bin\Debug\QRCoder.dll
+C:\Users\Carlo\source\repos\Contact Tracing\Contact Tracing\obj\Debug\Contact Tracing.csproj.CopyComplete

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QRCoder;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -93,6 +94,14 @@ namespace Contact_Tracing
         private void infoTxtBox3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btngenerate_Click(object sender, EventArgs e)
+        {
+            QRCodeGenerator qr = new QRCodeGenerator();
+            QRCodeData data = qr.CreateQrCode(txtBox7.Text, QRCodeGenerator.ECCLevel.Q);
+            QRCode code = new QRCode(data);
+            picBox1.Image = code.GetGraphic(5);
         }
     }
 }       

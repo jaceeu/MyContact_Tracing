@@ -49,6 +49,11 @@
             this.btnInfo3 = new System.Windows.Forms.Button();
             this.infoTxtBox2 = new System.Windows.Forms.RichTextBox();
             this.infoTxtBox3 = new System.Windows.Forms.RichTextBox();
+            this.btngenerate = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.picBox1 = new System.Windows.Forms.PictureBox();
+            this.txtBox7 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn1
@@ -252,12 +257,54 @@
             this.infoTxtBox3.Text = "";
             this.infoTxtBox3.TextChanged += new System.EventHandler(this.infoTxtBox3_TextChanged);
             // 
+            // btngenerate
+            // 
+            this.btngenerate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btngenerate.Location = new System.Drawing.Point(314, 489);
+            this.btngenerate.Name = "btngenerate";
+            this.btngenerate.Size = new System.Drawing.Size(297, 31);
+            this.btngenerate.TabIndex = 21;
+            this.btngenerate.Text = "Generate";
+            this.btngenerate.UseVisualStyleBackColor = true;
+            this.btngenerate.Click += new System.EventHandler(this.btngenerate_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(51, 369);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 16);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "QR Code";
+            // 
+            // picBox1
+            // 
+            this.picBox1.BackColor = System.Drawing.Color.White;
+            this.picBox1.Location = new System.Drawing.Point(46, 388);
+            this.picBox1.Name = "picBox1";
+            this.picBox1.Size = new System.Drawing.Size(262, 230);
+            this.picBox1.TabIndex = 23;
+            this.picBox1.TabStop = false;
+            // 
+            // txtBox7
+            // 
+            this.txtBox7.Location = new System.Drawing.Point(314, 388);
+            this.txtBox7.Multiline = true;
+            this.txtBox7.Name = "txtBox7";
+            this.txtBox7.Size = new System.Drawing.Size(297, 95);
+            this.txtBox7.TabIndex = 24;
+            // 
             // DaTrace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
-            this.ClientSize = new System.Drawing.Size(877, 412);
+            this.ClientSize = new System.Drawing.Size(888, 630);
+            this.Controls.Add(this.txtBox7);
+            this.Controls.Add(this.picBox1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btngenerate);
             this.Controls.Add(this.infoTxtBox3);
             this.Controls.Add(this.infoTxtBox2);
             this.Controls.Add(this.btnInfo3);
@@ -282,6 +329,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "DaTrace";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.picBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,6 +358,10 @@
         private System.Windows.Forms.Button btnInfo3;
         private System.Windows.Forms.RichTextBox infoTxtBox2;
         private System.Windows.Forms.RichTextBox infoTxtBox3;
+        private System.Windows.Forms.Button btngenerate;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox picBox1;
+        private System.Windows.Forms.TextBox txtBox7;
     }
 }
 
